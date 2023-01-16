@@ -1,0 +1,356 @@
+/* CSS HEX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #012622;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+:hover {
+  transition: 0.2s;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.container-header {
+  background-color: #003b36;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-header > .header-img > img {
+  width: 8vw;
+}
+.container-header > .menu {
+  display: flex;
+  align-items: center;
+}
+.container-header > .menu > ul {
+  display: flex;
+}
+.container-header > .menu > ul > li {
+  padding: 1rem;
+}
+.container-header > .menu > ul > li > a {
+  color: #ece5f0;
+  padding: 0.8rem;
+}
+.container-header > .menu > ul > li > a:hover {
+  background-color: #ece5f0;
+  border-radius: 0.2rem;
+  color: #003b36;
+}
+.container-header > .menu > ul > li > .pag-atual {
+  border-bottom: 2px #e98a15 solid;
+}
+.container-header > .reserva-login {
+  display: flex;
+  align-items: center;
+}
+.container-header > .reserva-login > button {
+  margin-right: 1rem;
+  padding: 0.6rem;
+  font-weight: bold;
+  background-color: #ece5f0;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.container-header > .reserva-login > button:hover {
+  background-color: #e98a15;
+  color: #ece5f0;
+}
+.container-header > .reserva-login > a {
+  color: #ece5f0;
+}
+.container-header > .reserva-login > a:hover {
+  color: #e98a15;
+  border-bottom: 1px #e98a15 solid;
+}
+
+.div-cima,
+.div-baixo {
+  margin: 10vh 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Aleo", sans-serif;
+  color: #012622;
+}
+
+h2,
+span {
+  font-family: "Aleo", sans-serif;
+  font-size: 2rem;
+  color: #003b36;
+}
+h2 > span,
+span > span {
+  border-bottom: 4px #e98a15 solid;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+}
+main > .container-main {
+  display: flex;
+  flex-direction: column;
+}
+main > .container-main > .div-cima {
+  display: flex;
+  gap: 2vw;
+}
+main > .container-main > .div-cima > .texto-sobre {
+  width: 50%;
+}
+main > .container-main > .div-cima > .texto-sobre > h1 {
+  text-indent: 2.5rem;
+}
+main > .container-main > .div-cima > .texto-sobre > .paragrafo {
+  text-indent: 2.5rem;
+  text-align: justify;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+main > .container-main > .div-cima > .img-cima {
+  width: auto;
+}
+main > .container-main > .div-cima > .img-cima > img {
+  border-radius: 0.2rem;
+}
+main > .container-main > .div-baixo {
+  display: flex;
+  gap: 2vw;
+}
+main > .container-main > .div-baixo > .img-baixo {
+  width: 50%;
+  position: relative;
+}
+main > .container-main > .div-baixo > .img-baixo > .img-baixo1 {
+  border-radius: 0.2rem;
+  width: 100%;
+}
+main > .container-main > .div-baixo > .img-baixo > .img-baixo2 {
+  position: absolute;
+  width: 50%;
+  bottom: -20px;
+  right: -168px;
+}
+main > .container-main > .div-baixo > .texto-slogan {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+main > .container-main > .div-baixo > .texto-slogan > button {
+  padding: 1rem;
+  width: 40%;
+  margin: 10vh 0 0 25%;
+  background-color: #003b36;
+  color: #ece5f0;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main > .container-main > .div-baixo > .texto-slogan > button:hover {
+  background-color: #ece5f0;
+  color: #012622;
+  border-bottom: 2px #012622 solid;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #003b36;
+  width: 100%;
+}
+footer > .container-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5vw;
+  text-align: center;
+}
+footer > .container-footer > .newsletter > ul > li {
+  color: #ece5f0;
+  padding: 0.5rem;
+}
+footer > .container-footer > .newsletter > ul > li > input {
+  border-radius: 0.2rem;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+footer > .container-footer > .newsletter > ul > li > input::placeholder {
+  text-align: center;
+}
+footer > .container-footer > .newsletter > ul > li > input:focus {
+  outline: none;
+}
+footer > .container-footer > .redes-sociais > ul {
+  display: flex;
+  justify-content: center;
+}
+footer > .container-footer > .redes-sociais > ul > li {
+  font-size: 2rem;
+  padding: 1rem;
+}
+footer > .container-footer > .redes-sociais > ul > li > a > i {
+  font-size: 2.5rem;
+}
+footer > .container-footer > .download-app > ul {
+  display: flex;
+  justify-content: center;
+}
+footer > .container-footer > .download-app > ul > li {
+  padding: 1rem;
+}
+footer > .container-footer > .download-app > ul > li > a > i {
+  font-size: 2.5rem;
+}
+
+i {
+  color: #ece5f0;
+}
+
+.fa-square-facebook:hover {
+  color: #4267B2;
+}
+
+.fa-square-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-square-pinterest:hover {
+  color: #E60023;
+}
+
+.fa-square-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-apple:hover {
+  color: black;
+}
+
+.fa-google-play:hover {
+  color: #0F9D58;
+}
+
+.li-titulo {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #ece5f0;
+  font-family: "Poppins", sans-serif;
+}
+
+.copyright {
+  background-color: #012622;
+  color: #ece5f0;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright > p > a {
+  color: #ece5f0;
+  border-bottom: 1px #e98a15 solid;
+  cursor: pointer;
+}
+.copyright > p > a:hover {
+  color: #e98a15;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  header {
+    width: 100%;
+    position: static;
+  }
+  header > .container-header {
+    flex-direction: column;
+  }
+  header > .container-header > .header-img {
+    margin: 0 auto;
+  }
+  header > .container-header > .header-img > img {
+    width: 25vw;
+  }
+  header > .container-header > .menu {
+    flex-direction: column;
+  }
+  header > .container-header > .menu > ul > li {
+    padding: 0.6rem;
+  }
+  header > .container-header > .reserva-login {
+    justify-content: center;
+    padding: 2vh 0;
+  }
+  header > .container-header > .reserva-login > button {
+    margin-right: 0;
+  }
+  header > .container-header > .reserva-login > a {
+    display: none;
+  }
+  .div-cima,
+  .div-baixo {
+    margin: 5vh 0;
+  }
+  .div-cima {
+    flex-direction: column;
+  }
+  .div-cima > .texto-sobre {
+    width: 100% !important;
+  }
+  .div-cima > .texto-sobre > .p2 {
+    display: none;
+  }
+  .div-cima > .img-cima > img {
+    width: 100%;
+  }
+  .div-baixo {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .div-baixo > .img-baixo {
+    display: none;
+  }
+  .div-baixo > .texto-slogan {
+    width: 100% !important;
+  }
+  .div-baixo > .texto-slogan > button {
+    padding: 50px;
+    width: 80% !important;
+    margin: 2vh auto !important;
+  }
+  .container-footer {
+    flex-direction: column;
+  }
+  .container-footer > .footer-div {
+    margin-top: 2vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

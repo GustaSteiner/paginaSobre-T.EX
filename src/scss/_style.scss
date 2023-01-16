@@ -1,0 +1,424 @@
+@use "variaveis" as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: v.$verdeEscuro;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+:hover {
+    transition: .2s;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container-header {
+    background-color: v.$verdeClaro;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    &>.header-img {
+
+        &>img {
+            width: 8vw
+        }
+    }
+
+    &>.menu {
+        display: flex;
+        align-items: center;
+
+        &>ul {
+            display: flex;
+
+            &>li {
+                padding: 1rem;
+
+                &>a {
+                    color: v.$rosa;
+                    padding: .8rem;
+                }
+
+                &>a:hover {
+                    background-color: v.$rosa;
+                    border-radius: .2rem;
+                    color: v.$verdeClaro;
+
+                }
+
+                &>.pag-atual {
+                    border-bottom: 2px v.$laranja solid;
+                }
+            }
+        }
+
+    }
+
+    &>.reserva-login {
+        display: flex;
+        align-items: center;
+
+        &>button {
+            margin-right: 1rem;
+            padding: .6rem;
+            font-weight: bold;
+            background-color: v.$rosa;
+            border: none;
+            border-radius: .2rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: v.$laranja;
+                color: v.$rosa;
+            }
+        }
+
+        &>a {
+            color: v.$rosa;
+
+            &:hover {
+                color: v.$laranja;
+                border-bottom: 1px v.$laranja solid;
+            }
+        }
+    }
+}
+
+.div-cima,
+.div-baixo {
+    margin: 10vh 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Aleo", sans-serif;
+    color: v.$verdeEscuro;
+}
+
+h2,
+span {
+    font-family: "Aleo", sans-serif;
+    font-size: 2rem;
+    color: v.$verdeClaro;
+
+    &>span {
+        border-bottom: 4px v.$laranja solid;
+    }
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+    letter-spacing: .5px;
+
+    &>.container-main {
+        display: flex;
+        flex-direction: column;
+
+        &>.div-cima {
+            display: flex;
+            gap: 2vw;
+
+            &>.texto-sobre {
+                width: 50%;
+
+                &>h1 {
+                    text-indent: 2.5rem;
+                }
+
+                &>.paragrafo {
+                    text-indent: 2.5rem;
+                    text-align: justify;
+                    margin-top: .8rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            &>.img-cima {
+                width: auto;
+
+                &>img {
+                    border-radius: .2rem;
+                }
+            }
+        }
+
+        &>.div-baixo {
+            display: flex;
+            gap: 2vw;
+
+            &>.img-baixo {
+                width: 50%;
+                position: relative;
+
+                &>.img-baixo1 {
+                    border-radius: .2rem;
+                    width: 100%;
+                }
+
+                &>.img-baixo2 {
+                    position: absolute;
+                    width: 50%;
+                    bottom: -20px;
+                    right: -168px;
+                }
+            }
+
+            &>.texto-slogan {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                &>button {
+                    padding: 1rem;
+                    width: 40%;
+                    margin: 10vh 0 0 25%;
+                    background-color: v.$verdeClaro;
+                    color: v.$rosa;
+                    border: none;
+                    border-radius: .2rem;
+                    font-size: 2rem;
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: v.$rosa;
+                        color: v.$verdeEscuro;
+                        border-bottom: 2px v.$verdeEscuro solid;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: v.$verdeClaro;
+    width: 100%;
+
+    &>.container-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5vw;
+        text-align: center;
+
+        &>.newsletter>ul>li {
+            color: v.$rosa;
+            padding: .5rem;
+
+            &>input {
+                border-radius: .2rem;
+                border: none;
+                padding: .5rem;
+                width: 100%;
+
+                &::placeholder {
+                    text-align: center;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &>.redes-sociais {
+
+            &>ul {
+                display: flex;
+                justify-content: center;
+
+                &>li {
+                    font-size: 2rem;
+                    padding: 1rem;
+
+                    &>a>i {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        &>.download-app {
+
+            &>ul {
+                display: flex;
+                justify-content: center;
+
+                &>li {
+                    padding: 1rem;
+
+                    &>a>i {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+i {
+    color: v.$rosa;
+}
+
+.fa-square-facebook:hover {
+    color: #4267B2;
+}
+
+.fa-square-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-square-pinterest:hover {
+    color: #E60023;
+}
+
+.fa-square-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-apple:hover {
+    color: black;
+}
+
+.fa-google-play:hover {
+    color: #0F9D58;
+}
+
+.li-titulo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: v.$rosa;
+    font-family: "Poppins", sans-serif;
+}
+
+.copyright {
+    background-color: v.$verdeEscuro;
+    color: v.$rosa;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &>p>a {
+        color: v.$rosa;
+        border-bottom: 1px v.$laranja solid;
+        cursor: pointer;
+
+        &:hover {
+            color: v.$laranja;
+        }
+    }
+}
+
+@media (max-width: 414px) and (orientation:portrait) {
+    header {
+        width: 100%;
+        position: static;
+
+        &>.container-header {
+            flex-direction: column;
+
+            &>.header-img {
+                margin: 0 auto;
+
+                &>img {
+                    width: 25vw;
+                }
+            }
+
+            &>.menu {
+                flex-direction: column;
+
+                &>ul>li {
+                    padding: .6rem;
+                }
+            }
+
+            &>.reserva-login {
+                justify-content: center;
+                padding: 2vh 0;
+
+                &>button {
+                    margin-right: 0;
+                }
+
+                &>a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .div-cima,
+    .div-baixo {
+        margin: 5vh 0;
+    }
+
+    .div-cima {
+        flex-direction: column;
+
+        &>.texto-sobre {
+            width: 100% !important;
+
+            &>.p2 {
+                display: none;
+            }
+        }
+
+        &>.img-cima>img {
+            width: 100%;
+        }
+    }
+
+    .div-baixo {
+        flex-direction: column;
+        margin-top: 0;
+
+        &>.img-baixo {
+            display: none;
+        }
+
+        &>.texto-slogan {
+            width: 100% !important;
+
+            &>button {
+                padding: 50px;
+                width: 80% !important;
+                margin: 2vh auto !important;
+            }
+        }
+    }
+
+    .container-footer {
+        flex-direction: column;
+
+        &>.footer-div {
+            margin-top: 2vh;
+        }
+    }
+}
